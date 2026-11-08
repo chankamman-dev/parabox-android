@@ -1,0 +1,15 @@
+# 构建产物
+cloud/build/
+tools/**/bin/
+tools/**/obj/
+# 签名、安装包、游戏数据（都在 E:\android-recompile-work\parabox-android-work，不入库）
+*.keystore
+*.jks
+*.apk
+*.obb
+*.resS
+*.bank
+# 扫码登录截图（含当时的登录二维码）
+shots/launcher-login.png
+# 本机工具链路径（ANDROID_HOME 等）
+local.env

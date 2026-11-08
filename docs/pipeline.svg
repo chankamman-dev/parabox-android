@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 470" width="1200" height="470" font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC','Source Han Sans SC',sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#5b6478"/>
+    </marker>
+    <style>
+      .t { fill:#e9ecf2; font-size:17px; font-weight:600 }
+      .s { fill:#8b93a5; font-size:13px }
+      .lane { fill:#9aa3b5; font-size:13px; letter-spacing:3px }
+      .box { fill:#161a24; stroke:#2a3040; stroke-width:1.5 }
+      .hot { fill:#13233d; stroke:#3a8dff; stroke-width:1.5 }
+      .pink { fill:#2a1424; stroke:#e0187e; stroke-width:1.5 }
+      .ln { stroke:#5b6478; stroke-width:1.6; fill:none; marker-end:url(#a) }
+    </style>
+  </defs>
+  <rect width="1200" height="470" rx="22" fill="#0c0e14"/>
+  <g fill="#9696a0" opacity=".16">
+    <rect x="1130" y="24" width="22" height="22"/><rect x="1088" y="60" width="9" height="9"/>
+    <rect x="34" y="420" width="16" height="16"/><rect x="610" y="236" width="8" height="8"/>
+    <rect x="1150" y="410" width="12" height="12"/><rect x="560" y="22" width="10" height="10"/>
+  </g>
+
+  <text x="40" y="52" class="lane">电脑上 · 打包一次</text>
+
+  <rect x="40" y="72" width="200" height="104" rx="14" class="box"/>
+  <text x="60" y="108" class="t">Steam Windows 版</text>
+  <text x="60" y="134" class="s">Unity 2020.3.30 · Mono</text>
+  <text x="60" y="155" class="s">depot 1260521</text>
+
+  <rect x="276" y="72" width="200" height="104" rx="14" class="box"/>
+  <text x="296" y="108" class="t">ptx pdata</text>
+  <text x="296" y="134" class="s">数据升到 2020.3.49</text>
+  <text x="296" y="155" class="s">着色器 DXBC → GLES3</text>
+
+  <rect x="512" y="72" width="200" height="104" rx="14" class="box"/>
+  <text x="532" y="108" class="t">ptx pstage</text>
+  <text x="532" y="134" class="s">织入钩子、触屏、Steam 桥</text>
+  <text x="532" y="155" class="s">FMOD 入口改指转接层</text>
+
+  <rect x="748" y="72" width="180" height="104" rx="14" class="box"/>
+  <text x="768" y="108" class="t">il2cpp</text>
+  <text x="768" y="134" class="s">C# → C++ → arm64</text>
+  <text x="768" y="155" class="s">libil2cpp.so</text>
+
+  <rect x="964" y="72" width="196" height="104" rx="14" class="hot"/>
+  <text x="984" y="108" class="t">APK</text>
+  <text x="984" y="134" class="s">启动页 + 播放器 + FMOD</text>
+  <text x="984" y="155" class="s">可选：内置游戏数据</text>
+
+  <path d="M240 124 H272" class="ln"/><path d="M476 124 H508" class="ln"/>
+  <path d="M712 124 H744" class="ln"/><path d="M928 124 H960" class="ln"/>
+
+  <path d="M1062 176 V214 H235 V252" class="ln"/>
+
+  <text x="40" y="244" class="lane">设备上 · 每次启动</text>
+
+  <rect x="40" y="262" width="230" height="112" rx="14" class="pink"/>
+  <text x="60" y="298" class="t">启动页</text>
+  <text x="60" y="324" class="s">扫码登录 · 成就 · 设置</text>
+  <text x="60" y="345" class="s">下载云存档后再进游戏</text>
+
+  <rect x="306" y="262" width="250" height="112" rx="14" class="box"/>
+  <text x="326" y="298" class="t">游戏数据（134 MB）</text>
+  <text x="326" y="324" class="s">首次：从 APK 解压</text>
+  <text x="326" y="345" class="s">或从 Steam depot 下载</text>
+
+  <rect x="592" y="262" width="250" height="112" rx="14" class="box"/>
+  <text x="612" y="298" class="t">Unity 2020.3.49 播放器</text>
+  <text x="612" y="324" class="s">贴图流读 files/gamedata</text>
+  <text x="612" y="345" class="s">存档后 4 秒上传云端</text>
+
+  <rect x="878" y="262" width="282" height="112" rx="14" class="hot"/>
+  <text x="898" y="298" class="t">FMOD 2.03.15</text>
+  <text x="898" y="324" class="s">游戏按 2.01 调用</text>
+  <text x="898" y="345" class="s">libpbxfmod 转接 19 个入口</text>
+
+  <path d="M270 318 H302" class="ln"/><path d="M556 318 H588" class="ln"/><path d="M842 318 H874" class="ln"/>
+
+  <text x="40" y="430" class="s">整条链路不经过模拟器或转译层：游戏代码直接编成 arm64 机器码，跑在官方的 Unity Android 播放器上。</text>
+</svg>

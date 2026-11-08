@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dev.kmparabox.game" android:installLocation="auto">
+    <supports-screens android:smallScreens="true" android:normalScreens="true"
+        android:largeScreens="true" android:xlargeScreens="true" android:anyDensity="true" />
+    <uses-feature android:glEsVersion="0x00030000" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application android:label="Patrick's Parabox" android:icon="@mipmap/app_icon"
+        android:extractNativeLibs="true" android:hardwareAccelerated="false"
+        android:appCategory="game" android:isGame="true">
+        <activity android:name="dev.kmparabox.ParaboxActivity"
+            android:theme="@style/UnityThemeSelector" android:exported="false"
+            android:screenOrientation="sensorLandscape" android:launchMode="singleTask"
+            android:hardwareAccelerated="false" android:resizeableActivity="false"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density">
+            <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+            <meta-data android:name="android.notch_support" android:value="true" />
+        </activity>
+        <activity android:name="dev.kmparabox.cloud.LauncherActivity" android:exported="true"
+            android:theme="@android:style/Theme.DeviceDefault.NoActionBar.Fullscreen" android:hardwareAccelerated="true"
+            android:screenOrientation="sensorLandscape" android:launchMode="singleTask"
+            android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenLayout|screenSize|smallestScreenSize|density|uiMode">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- BUILD-ID -->
+        <meta-data android:name="unity.splash-mode" android:value="0" />
+        <meta-data android:name="unity.splash-enable" android:value="false" />
+        <meta-data android:name="android.max_aspect" android:value="2.4" />
+    </application>
+</manifest>

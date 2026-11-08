@@ -1,0 +1,23 @@
+{"id":1,"command":"register","name":"Xbox Wireless Controller","vid":1118,"pid":2835,"bus":"usb","configuration":[{"type":100,"data":[1,3]},{"type":101,"data":[304,305,307,308,310,311,314,315,316,317,318]},{"type":103,"data":[0,1,2,3,4,5,16,17]}],"abs_info":[{"code":0,"info":{"value":0,"minimum":-32768,"maximum":32767,"fuzz":0,"flat":0,"resolution":0}},{"code":1,"info":{"value":0,"minimum":-32768,"maximum":32767,"fuzz":0,"flat":0,"resolution":0}},{"code":2,"info":{"value":0,"minimum":0,"maximum":1023,"fuzz":0,"flat":0,"resolution":0}},{"code":3,"info":{"value":0,"minimum":-32768,"maximum":32767,"fuzz":0,"flat":0,"resolution":0}},{"code":4,"info":{"value":0,"minimum":-32768,"maximum":32767,"fuzz":0,"flat":0,"resolution":0}},{"code":5,"info":{"value":0,"minimum":0,"maximum":1023,"fuzz":0,"flat":0,"resolution":0}},{"code":16,"info":{"value":0,"minimum":-1,"maximum":1,"fuzz":0,"flat":0,"resolution":0}},{"code":17,"info":{"value":0,"minimum":-1,"maximum":1,"fuzz":0,"flat":0,"resolution":0}}]}
+{"id":1,"command":"delay","duration":3000}
+{"id":1,"command":"inject","events":[1,304,1,0,0,0]}
+{"id":1,"command":"delay","duration":120}
+{"id":1,"command":"inject","events":[1,304,0,0,0,0]}
+{"id":1,"command":"delay","duration":350}
+{"id":1,"command":"delay","duration":4000}
+{"id":1,"command":"inject","events":[3,16,1,0,0,0]}
+{"id":1,"command":"delay","duration":120}
+{"id":1,"command":"inject","events":[3,16,0,0,0,0]}
+{"id":1,"command":"delay","duration":350}
+{"id":1,"command":"delay","duration":600}
+{"id":1,"command":"inject","events":[3,16,1,0,0,0]}
+{"id":1,"command":"delay","duration":120}
+{"id":1,"command":"inject","events":[3,16,0,0,0,0]}
+{"id":1,"command":"delay","duration":350}
+{"id":1,"command":"delay","duration":600}
+{"id":1,"command":"inject","events":[3,17,-1,0,0,0]}
+{"id":1,"command":"delay","duration":120}
+{"id":1,"command":"inject","events":[3,17,0,0,0,0]}
+{"id":1,"command":"delay","duration":350}
+{"id":1,"command":"delay","duration":600}
+{"id":1,"command":"delay","duration":20000}
