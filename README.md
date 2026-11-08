@@ -4,6 +4,8 @@
 
 # Patrick's Parabox · Android
 
+**简体中文** · [English](README.en.md)
+
 把 Steam 上的 Windows 版《Patrick's Parabox》原生移植到 Android。<br>
 没有模拟器，也没有转译层：游戏代码编成 arm64 机器码，跑在 Unity 官方的 Android 播放器上。
 
